@@ -4,7 +4,7 @@ from openai import OpenAI
 st.title("GPT-4 Chat (free)")
 with st.expander("ℹ️ Disclaimer"):
     st.caption(
-        "We appreciate your engagement! Please note, this demo is designed to process a maximum of 10 interactions. Thank you for your understanding."
+        "We appreciate your engagement! Please note, this free version is designed to process a maximum of 10 interactions. Thank you for your understanding."
     )
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
