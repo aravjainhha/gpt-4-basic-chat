@@ -1,7 +1,7 @@
 import streamlit as st
 from openai import OpenAI
 
-st.title("ChatGPT-like clone")
+st.title("GPT-4 Chat (free)")
 with st.expander("ℹ️ Disclaimer"):
     st.caption(
         "We appreciate your engagement! Please note, this demo is designed to process a maximum of 10 interactions. Thank you for your understanding."
