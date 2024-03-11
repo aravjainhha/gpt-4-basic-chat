@@ -4,7 +4,7 @@ from openai import OpenAI
 st.title("GPT-4 Chat (free)")
 with st.expander("ℹ️ Disclaimer"):
     st.caption(
-        "We appreciate your engagement! Please note, this free version is designed to process a maximum of 10 interactions. Thank you for your understanding."
+        "We appreciate your engagement! Please note, this free version is designed to process a maximum of 5 interactions. Thank you for your understanding."
     )
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
@@ -21,7 +21,7 @@ for message in st.session_state.messages:
 
 # Maximum allowed messages
 max_messages = (
-    20  # Counting both user and assistant messages, so 10 iterations of conversation
+    10  # Counting both user and assistant messages, so 5 iterations of conversation
 )
 
 if len(st.session_state.messages) >= max_messages:
